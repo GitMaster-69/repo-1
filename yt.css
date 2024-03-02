@@ -1,0 +1,233 @@
+html, body {
+    width: 100vw;
+  }
+body{
+    margin-top:40px;
+    margin-left: 0px;
+    margin-right:0px;
+    display: grid;
+    background-color:rgb(248, 246, 246);
+   }
+body:focus{
+    background-color: black;
+    transition:background-color 2s;
+}
+.header{
+    top:0px;
+    display: flex;
+    position:fixed;
+    height:60px;
+    width:98%;
+    left:15px;
+    justify-content: space-between;
+    background-color: white;
+    -bottom-width: 1px; 
+    border-bottom-style: solid; 
+    border-bottom-color:rgb(214, 212, 212):
+}
+#search{
+    width: 800px;
+    flex:3;
+    box-shadow: inset 5px 3px 5px rgb(209, 207, 207);
+    height:36px;
+    flex:auto;
+    padding:10px;
+    font-size:20px;
+}
+#search::placeholder{
+    font-family: Roboto,arial;
+}
+.img{  
+    width: 40px;
+    border-radius: 50%;
+    justify-content: end;
+    box-shadow:3px 3px 5px greenyellow;
+}
+.h1{
+    margin-right:80px;
+   display: flex;
+   align-items: center;
+    background-color:aliceblue;
+}
+.h2{
+    column-gap: 0px;
+    flex: 3;
+    background-color: aliceblue;
+    display: flex;
+    flex:wrap;
+    align-items:center;
+
+}
+.h3{
+    max-width: 20%;
+    display:flex;
+    flex:1;
+    justify-content:space-around;
+    align-items:center;
+}
+    
+.gflex{
+    position:relative;
+    margin-top:60px;
+    display: grid;
+    grid-template-columns:1fr ;
+    column-gap: 30px;
+}
+.gof{
+    position:absolute;
+    left:0;
+    position:fixed;
+    top:60px;
+    border-right-color: rgb(207, 206, 206);
+    border-right-width:1px;
+    border-right-style:solid; 
+    background-color:rgb(248, 246, 246);
+    grid-area:0/0/1/1;
+    color:black;
+    flex:1;
+    display: flex;
+    flex-direction:column;
+    justify-content:start;
+    align-items:normal;
+    /* display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 5fr; */
+    
+}.gof>*{
+    flex-shrink:0;
+    padding:20px;    
+   /*  border:2px; */
+   /*  outline: 2px solid rgb(142, 141, 141); */
+    /* outline-offset: 15px; */
+    box-sizing:content-box;
+}
+/* .gof:hover>*{
+    font-size:20px;
+    border-radius:5%;
+    box-shadow:3px 3px 3px 3px grey;
+    transition: box-shadow 1s,font-size 1s;
+} */
+.grid{
+    left:0px;
+    margin-left:0px;
+    position:absolute;
+    padding-left: 120px;
+    display:grid;
+    justify-content: start;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-area:1/2/1/2;
+}
+.ok{
+    height: 60px;
+    border-radius: 8%;
+
+    /* box-shadow: 5px 5px grey; */
+}
+.f1:hover,.f2:hover,.f3:hover,.f4:hover,.f5:hover,.f6:hover{
+    font-size:20px;
+    background-color: black;
+    color:white;
+    border-radius:5%;
+    box-shadow:3px 3px 3px 3px grey;
+    transition: box-shadow 0.7s,font-size 1s;
+    
+}
+.gof button{
+    display: flex;
+    align-items: wrap;
+    box-sizing: border-box;
+    border:none;
+    width:100%;
+    justify-content:center;
+    font-size: 16px;
+}
+.gof button:hover{
+    font-size:18px;
+    transition:font-size 1s;
+}
+div:not([class]) {
+    outline: 2px solid rgb(177, 176, 176);
+    outline: offset -10px;;
+    padding: 0.5em;
+   }
+div:defined([class]){
+    background-color: black;
+}
+   /* #btn {
+    display: none;
+   }
+   #btn:checked + label {
+    background-color: #dd4814;
+   } */
+#bttn,#btttn{
+    border:none;
+    background-color:rgb(0, 0, 0);
+    color:white;
+    font-size: 20px;
+    /* opacity: 0.5; */
+    border-radius:7%;
+    box-shadow:5px 5px black;
+}
+#bttn:hover,#btttn:hover{
+    font-size: 23px;
+    background-color: black;
+}
+#bttn:active,#btttn:active{
+    background-color: black;
+    transition:background-color 1s; 
+}
+.v1img{
+    margin-top: 15px;
+    border-radius: 50%;
+}
+.vid1{
+    display: grid;
+    column-gap: 5px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 5fr;
+}
+.vid11{
+align-items: center;
+ display: grid;
+ grid-template-rows: 1fr 1fr;
+ row-gap: 3px;
+}
+.v1{
+    display:grid;
+    column-gap: 10px;
+}
+.ch1{
+    font-weight: 600;
+    font-size:20px;
+}
+.darktheme{
+    background-color: black;
+    color:white;
+}
+.iimg1{
+    position: relative;
+    left:10px;
+    z-index:-1;
+}
+.imgtime1{
+    background-color: white;
+    color: black;
+    position:absolute;
+    right:10px;
+    bottom: 10px;
+   z-index:1;
+}
+.last_img{
+    position:relative;
+    z-index:2;
+}
+.last-time{
+    z-index:4;
+    position:absolute;
+    bottom:10px;
+    right:30px;
+    background-color: black;
+    color:white;
+}
